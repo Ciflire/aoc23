@@ -13,6 +13,10 @@ layout {
 		pane cwd="./"
 	}
 
+	tab name="lazygit" {
+		pane command="lazygit"
+	}
+
 	tab name="editor" {
 		pane cwd="./" command="hx" {
 			args "./"
