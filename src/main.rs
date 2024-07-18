@@ -1,3 +1,6 @@
+mod day1;
+mod helper;
+
 fn main() {
-    println!("Hello, world!");
+    println!("Day 1 Part 1: {}", day1::part_one("./src/day1.txt"))
 }
