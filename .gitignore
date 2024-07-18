@@ -1,2 +1,5 @@
-go/bin
+# Added by cargo
 
+/target
+
+.direnv/

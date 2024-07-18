@@ -9,17 +9,29 @@ layout {
         }
     }
 
-	tab name="console" {
-		pane cwd="./"
-	}
-
 	tab name="lazygit" {
 		pane command="lazygit"
 	}
 
+	tab name="compile" {
+		pane command="cargo" {
+			args "run"
+		}
+	}
+
+	tab name="test" {
+		pane command="cargo" {
+			args "test"
+		}
+	}
+	
 	tab name="editor" {
 		pane cwd="./" command="hx" {
 			args "./"
 		}
+	}
+	
+	tab name="console" {
+		pane cwd="./"
 	}
 }
