@@ -1,13 +1,10 @@
-use fancy_regex::Regex;
-
 use crate::helper::file_to_str;
 
 pub fn part_two(path: &str) -> u32 {
     let mut res = 0;
     let text = file_to_str(path).unwrap().to_owned();
     let games = text.split('\n');
-    let mut game_number = 1;
-    'game: for game in games {
+    for game in games {
         if game == "" {
             break;
         }
@@ -48,7 +45,6 @@ pub fn part_two(path: &str) -> u32 {
             }
         }
         res += max_blue * max_green * max_red;
-        game_number += 1
     }
     res
 }

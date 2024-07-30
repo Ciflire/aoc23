@@ -14,5 +14,12 @@ fn main() {
     println!("Day 3 Part 2: {}", day3::part_two("./src/day3.txt"));
     println!("Day 4 Part 1: {}", day4::part_one("./src/day4.txt"));
     println!("Day 4 Part 2: {}", day4::part_two("./src/day4.txt"));
-    println!("Day 5 Part 1: {}", day5::part_one("./src/day5.txt"));
+    println!(
+        "Day 5 Part 1: {}",
+        day5::part_one("./src/day5.txt").unwrap()
+    );
+    println!(
+        "Day 5 Part 2: {}",
+        day5::part_two("./src/day5.txt").unwrap()
+    )
 }
